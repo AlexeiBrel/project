@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="shed">
+        <div style="max-width: 550px; width: 100%;">
+            <h1 class="title">Расписание Автобуса № 4</h1>
+
+            <div class="tabs">
+                <button class="tablink active" onclick="openTab('tab1', event)">пл. Ленина - ул. Куйбышева</button>
+                <button class="tablink" onclick="openTab('tab2', event)">ул. Куйбышева - пл. Ленина</button>
+            </div>
+
+            <div id="tab1" class="tabcontent">
+                <div class="accordion" id="busAccordion"> </div>
+            </div>
+
+            <div id="tab2" class="tabcontent">
+                <div class="accordion" id="busAccordion1"> </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="details.js"></script>
+</body>
+
+</html>

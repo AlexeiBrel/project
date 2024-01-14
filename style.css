@@ -1,0 +1,157 @@
+.wrapper {
+    max-width: 1920px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ui-item {
+    margin: 5px 0;
+    padding: 13px;
+    background: #f3f3f3;
+    border-radius: 3px;
+    max-width: 360px;
+    width: 100%;
+}
+
+.clearfix {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.ui-title {
+    font-size: 14px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.ui-title h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ui-nomer {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 26px;
+    background: #FF4497;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.tablink {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.tablink:hover {
+    background-color: #ddd;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px 0;
+}
+
+/* Optional: Add a background color to the active tab link and the current tab content */
+.tablink.active {
+    background-color: #bbf1a9;
+
+}
+
+/* Optional: Style the tab content */
+.tabcontent {
+    /* border: 1px solid #ccc; */
+    border-top: none;
+}
+
+.shed {
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+}
+
+button {
+    padding: 10px;
+    border: none;
+}
+
+.accordion {
+
+    width: 100%;
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    display: block;
+    cursor: pointer;
+    line-height: 16px;
+    background-color: #689cff;
+    padding: 15px 0 15px 30px;
+
+}
+
+.accordion-body {
+    display: none;
+    flex-direction: column;
+    padding: 0 10px;
+    padding-left: 30px;
+    background-color: #ffffff;
+}
+
+.accordion-body p {
+    margin: 0;
+    color: #000;
+    font: 400 18px/25px 'Nunito';
+    padding: 5px;
+    margin-left: 25px;
+}
+
+.weekdays span {
+    color: #0059ff;
+    font-weight: 600;
+}
+
+.weekends span {
+    color: #FF4497;
+    font-weight: 600;
+}
+
+.weekends {
+    background-color: #efefef;
+}
