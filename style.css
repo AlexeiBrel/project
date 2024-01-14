@@ -21,6 +21,11 @@ a {
     border-radius: 3px;
     max-width: 360px;
     width: 100%;
+    transition: all 0.3s ease;
+}
+
+.ui-item:hover {
+    background: #cacaca;
 }
 
 .clearfix {
@@ -64,12 +69,14 @@ a {
 .tabs {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
 .tablink {
     cursor: pointer;
     font-size: 17px;
+    /* width: 100%; */
 }
 
 .tablink:hover {
@@ -105,7 +112,6 @@ button {
 }
 
 .accordion {
-
     width: 100%;
     margin-top: 20px;
 }
@@ -131,7 +137,7 @@ button {
     display: none;
     flex-direction: column;
     padding: 0 10px;
-    padding-left: 30px;
+    padding-left: 0;
     background-color: #ffffff;
 }
 
@@ -140,7 +146,7 @@ button {
     color: #000;
     font: 400 18px/25px 'Nunito';
     padding: 5px;
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .weekdays span {
@@ -155,4 +161,10 @@ button {
 
 .weekends {
     background-color: #efefef;
+}
+
+@media all and (max-width: 550px) {
+    .tablink {
+        width: 100%;
+    }
 }
